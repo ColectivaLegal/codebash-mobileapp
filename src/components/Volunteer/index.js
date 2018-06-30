@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Card, View, Text } from 'react-native'
+import { View, Text } from 'react-native'
 import { Link } from 'react-router-native'
-import { Button, Icon } from 'native-base'
+import { Button, Icon, H1 } from 'native-base'
 import styled from 'styled-components'
 
 const StyledView = styled.View`
@@ -12,6 +12,7 @@ const StyledView = styled.View`
 `;
 
 const StyledButton = styled(Button)`
+  flex-direction: column;
   width: 30%;
 `;
 
@@ -19,18 +20,18 @@ const StyledIcon = styled(Icon)`
   margin: auto;
 `;
 
+
 export default class Volunteer extends Component {
   render() {
     return (
       <View>
         <StyledView>
-          <StyledButton info><StyledIcon name="camera" type="FontAwesome" /></StyledButton>
-          <StyledButton danger><StyledIcon name="video-camera" type="FontAwesome" /></StyledButton>
-          <StyledButton success><StyledIcon name="report" type="MaterialIcons" /></StyledButton>
+          <StyledButton info><StyledIcon name="camera" type="FontAwesome" /><Text>Take Pic</Text></StyledButton>
+          <StyledButton danger><StyledIcon name="video-camera" type="FontAwesome" /><Text>Record</Text></StyledButton>
+          <StyledButton success><StyledIcon name="report" type="MaterialIcons" /><Text>File Report</Text></StyledButton>
         </StyledView>
 
-        <Text>Volunteer</Text>
-        <Link to='/'><Text>Go home</Text></Link>
+        <H1>Welcome, Volunteer!</H1>
       </View>
     )
   }
