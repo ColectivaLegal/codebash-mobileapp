@@ -20,7 +20,6 @@ const StyledIcon = styled(Icon)`
 `;
 
 export default class Volunteer extends Component {
-
   render() {
     return (
       <View>
