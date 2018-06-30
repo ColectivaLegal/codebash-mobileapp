@@ -1,5 +1,6 @@
 
 export default es = {
   'footer.home': 'Casa',
-  'footer.volunteer': 'Ayuda'
+  'footer.volunteer': 'Ayuda',
+  'language': 'es'
 }
