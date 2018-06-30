@@ -45,7 +45,7 @@ export default class App extends React.Component {
         messages={this.state.locale.messages}
       >
         <NativeRouter initialEntries={['/']} >
-          <Layout changeLanguage={this.changeLanguage}>
+          <Layout changeLanguage={this.changeLanguage} language={this.state.locale.key}>
             <Route exact path='/' component={Home} />
             <Route exact path='/volunteer'  component={Volunteer} />
           </Layout>

@@ -9,7 +9,7 @@ export default class Layout extends Component {
   render() {
     return (
       <Container>
-        <Header changeLanguage={this.props.changeLanguage} />
+        <Header changeLanguage={this.props.changeLanguage} language={this.props.language} />
         <Content>
           { this.props.children }
         </Content>
