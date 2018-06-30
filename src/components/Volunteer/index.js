@@ -4,7 +4,6 @@ import { Link } from 'react-router-native'
 
 
 export default class Volunteer extends Component {
-
   render() {
     return (
       <View>
