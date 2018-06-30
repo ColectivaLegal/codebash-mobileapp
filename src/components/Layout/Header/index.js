@@ -1,6 +1,5 @@
 import React from 'react'
 import { Header as Head, Left, Body, Right, Title, Picker, Icon } from 'native-base';
-import { Text } from 'react-native'
 
 const Header = ({ changeLanguage, language }) => (
   <Head>
